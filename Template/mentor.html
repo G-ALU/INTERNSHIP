@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentor Dashboard - University Career Portal</title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <header>
+    <h1>Welcome</h1>
+    <nav>
+      <ul>
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/mentees">Mentees</a></li>
+        <li><a href="/messages">Messages</a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>My Profile</h2>
+    <p>Name: [Mentor Name]</p>
+    <p>Email: [Mentor Email]</p>
+    <p>Expertise: [Mentor Expertise]</p>
+    <a href="/profile/edit">Edit Profile</a>
+
+    <h2>My Mentees</h2>
+    <ul>
+      <li>
+        <a href="/mentee/[student_id]">[Student Name]</a> - [Student Major]
+      </li>
+      </ul>
+
+    <h2>Messages</h2>
+    <ul>
+      <li>
+        <a href="/message/[message_id]">[Student Name] - [Message Subject]</a>
+      </li>
+      </ul>
+
+    <h2>Recommend Internships</h2>
+    <form action="" method="POST">
+      <label for="student_id">Select Mentee:</label>
+      <select name="student_id" id="student_id">
+        </select>
+      <label for="internship_id">Select Internship:</label>
+      <select name="internship_id" id="internship_id">
+        </select>
+      <button type="submit">Recommend</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2024 University Career Portal</p>
+  </footer>
+</body>
+</html>
